@@ -6,7 +6,7 @@ const fs = require('fs');
 request('https://backpack.tf/', function(err, response, html) {
   //Success
   if(!err && response.statusCode == 200) {
-   const $ = cheerio.load(html);
+    const $ = cheerio.load(html);
     //Loop trough the currency-box classes
     $('.currency-box').each(function(index, element) {
       //Find the value and remove the white space
