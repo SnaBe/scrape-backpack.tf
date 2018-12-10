@@ -1,7 +1,6 @@
 //Our required modules
 const request = require('request');
 const cheerio = require('cheerio');
-const fs = require('fs');
 //Reuest from backpack.tf
 request('https://backpack.tf/', function(err, response, html) {
   //Success
